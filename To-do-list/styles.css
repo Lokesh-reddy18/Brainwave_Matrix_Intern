@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .todo-container {
+  width: 500px;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.todo-container img{
+  width: 150px;
+ 
+  object-fit: cover;
+}
+.todo-container h2 {
+  font-size: 35px;
+  color: coral;
+}
+
+.todo-container .todo-input {
+  padding-top: 50px;
+}
+.todo-input input {
+  font-size: 15px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color:rgba(226, 224, 224, 0.76);
+  outline: none;
+  color: rgb(75, 73, 73);
+}
+.todo-input #txt-input {
+  width: 300px;
+  height: 35px;
+}
+.todo-input .btn-add, .btn {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color:coral;
+  color: white;
+  font-weight: 600;
+}
+.btn-add .btn{
+ 
+ font-size: 10px; 
+}
+.todo-input .todo-content {
+  padding: 30px 0px;
+  
+}
+
+ul li {
+  width: 100%;
+  margin-bottom: 10px;
+  list-style: none;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: #e3e0e0cf;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.9s ease;
+}
+li:hover{
+  background-color:  rgb(255, 255, 187)  ;
+}
+.check{
+text-decoration: line-through;
+}
+.check-li{
+  background-color: rgb(255, 255, 187);
+  border-radius: 10px;
+}
+
+ul li p .checked{
+  width: 20px;
+  margin-right: 10px;
+}
+ul li p{
+  display: flex;
+  align-items: center;
+}
